@@ -31,6 +31,7 @@ request loadbalancer::getRequest()
       return r;
    }
    // ignore warning here about no return value
+   return request{};
 }
 
 bool loadbalancer::isRequestQueueEmpty()
