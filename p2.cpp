@@ -47,7 +47,7 @@ int main()
    {
       webserver w((char) (i + 65));
       webarray[i] = w;
-      webarray[i].addRequest(webarray[i].getRequest(), lb.getTime());
+      webarray[i].addRequest(lb.getRequest(), lb.getTime());
    }
    // loop
    while (lb.getTime() < 10000)
@@ -75,6 +75,5 @@ int main()
       }
       lb.incTime();
    }
-
 }
 
